@@ -1,0 +1,332 @@
+h1,h2,h3,h4,h5,h6, p {
+  font-weight: 300;
+}
+
+/* Our Gallery Section */
+.our-gallery-section {
+background-color: #e0ebf5;
+padding: 50px 0;
+text-align: center;
+}
+
+.our-gallery-section h2 {
+font-size: 36px;
+color: #333;
+margin-bottom: 20px;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 15px;
+}
+
+.gallery-grid img {
+width: 150px;
+height: 100px;
+object-fit: cover;
+border-radius: 8px;
+cursor: pointer;
+transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+transform: scale(1.05);
+}
+
+/* Lightbox Modal */
+.lightbox-modal {
+display: none; /* Hidden by default */
+position: fixed;
+z-index: 1000;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.8);
+align-items: center;
+justify-content: center;
+}
+
+.lightbox-content {
+max-width: 90%;
+max-height: 80%;
+border-radius: 10px;
+}
+
+.close {
+position: absolute;
+top: 20px;
+right: 30px;
+color: #fff;
+font-size: 35px;
+font-weight: bold;
+cursor: pointer;
+}
+
+
+/* Top Rated Cars Section */
+.top-rated-cars-section {
+background-color: #3372ad;
+padding: 50px 0;
+}
+
+.top-rated-cars-section h2 {
+font-size: 36px;
+color: #333;
+margin-bottom: 20px;
+}
+
+.filter-buttons {
+margin-bottom: 30px;
+}
+
+.filter-btn {
+background-color: #34568b;
+color: #fcfcf9;
+border: none;
+padding: 0px 20px;
+margin: 0 5px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.filter-btn:hover {
+background-color: #1c3a5d;
+}
+
+.car-cards {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 20px;
+}
+
+.car-card {
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+width: 250px;
+text-align: center;
+padding: 20px;
+}
+
+.car-image {
+width: 100%;
+height: auto;
+border-radius: 10px;
+}
+
+.car-card h3 {
+font-size: 20px;
+color: #333;
+margin: 10px 0;
+}
+
+.car-card p {
+color: #777;
+font-size: 14px;
+margin-bottom: 15px;
+}
+
+.btn {
+background-color: #34568b;
+color: #fff;
+border: none;
+padding: 0px 20px;
+border-radius: 5px;
+cursor: pointer;
+margin: 5px;
+}
+
+.btn:hover {
+background-color: #1c3a5d;
+}
+
+/* Our Services Section */
+.our-services-section {
+background-color: #e0ebf5;
+padding: 50px 0;
+text-align: center;
+}
+
+.our-services-section h2 {
+font-size: 36px;
+color: #333;
+margin-bottom: 30px;
+}
+
+.services-grid {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+}
+
+.service-card {
+background-color: #fff;
+width: 180px;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+text-align: center;
+}
+
+.service-card i {
+font-size: 40px;
+color: #34568b;
+margin-bottom: 10px;
+}
+
+.service-card h4 {
+font-size: 18px;
+color: #333;
+margin-top: 10px;
+}
+
+
+/* Contact Us Section */
+.contact-us-section {
+background-color: #34568b;
+padding: 50px 0;
+color: #fff;
+text-align: center;
+}
+
+.contact-us-section h2 {
+font-size: 36px;
+color: #fff;
+margin-bottom: 30px;
+}
+
+/* Contact Form Styling */
+.contact-form {
+max-width: 500px;
+margin: 0 auto 30px;
+}
+
+.contact-form .input-field input,
+.contact-form .input-field textarea {
+color: #333;
+background-color: #fff;
+border-radius: 5px;
+padding: 10px;
+}
+
+.contact-form .input-field label {
+color: #555;
+}
+
+.contact-form .btn {
+background-color: #ff6f61;
+color: #fff;
+padding: 0px 20px;
+border-radius: 5px;
+border: none;
+cursor: pointer;
+margin-top: 10px;
+}
+
+.contact-form .btn:hover {
+background-color: #ff4f3a;
+}
+
+/* Contact Information and Social Links */
+.contact-info {
+margin-top: 20px;
+}
+
+.contact-info ul {
+list-style-type: none;
+padding: 0;
+}
+
+.contact-info li {
+font-size: 18px;
+margin: 10px 0;
+}
+
+.contact-info i {
+margin-right: 10px;
+color: #ff6f61;
+}
+
+.contact-info a {
+color: #fff;
+text-decoration: none;
+}
+
+.contact-info a:hover {
+text-decoration: underline;
+}  
+
+/* Car Testimonial Section Styles */
+.car-testimonial-section {
+text-align: center;
+padding: 50px 20px;
+background-color: #5499f3;
+}
+
+.section-title {
+font-size: 36px;
+margin-bottom: 30px;
+color: #333;
+}
+
+/* Individual Car Testimonial Box */
+.car-testimonial {
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: #adb7bb;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+width: 100%;
+margin-bottom: 40px;
+transition: transform 0.3s ease;
+}
+
+.car-testimonial:hover {
+transform: translateY(-10px);
+}
+
+.car-testimonial-content {
+margin-bottom: 15px;
+}
+
+.car-testimonial-quote {
+font-size: 16px;
+font-style: italic;
+color: #555;
+margin-bottom: 10px;
+}
+
+.car-testimonial-name {
+font-size: 18px;
+font-weight: bold;
+color: #333;
+margin: 5px 0;
+}
+
+.car-testimonial-car {
+font-size: 14px;
+color: #e61010;
+}
+
+/* Car Testimonial Image */
+.car-testimonial-image img {
+border-radius: 50%;
+width: 120px;
+height: 120px;
+object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.car-testimonial {
+    width: 80%;
+}
+}

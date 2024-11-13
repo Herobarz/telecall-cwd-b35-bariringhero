@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/c72dd798a1.js" crossorigin="anonymous"></script>
+    <!-- font awesome cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Motors.css">
+    <title>H-Motors</title>
+    
+<style>
+  style  /* positioning the images on top of each other */
+    .image-container {
+        position: relative;
+        width: 1495px;
+        height: 521px;
+    }
+
+    .overlay-image {
+        position: absolute;
+        top: 50px; /* Position adjustment for the overlay image */
+        left: 50px;
+        width: 300px;
+        height: 200px;
+        opacity: 0.8; /* Optional opacity adjustment */
+    }
+</style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="img/yaris.png" alt="Background Car" class="background-image responsive-img">
+        <img src="img/H Motors.png" alt="Overlay Logo" class="overlay-image responsive-img" style="max-width: 20%; height: auto;">
+    </div>
+
+    <div style="background-color: lightblue; height: 400px;"> <br>
+        <h3 class="center">ABOUT US</h3>
+        <div class="center">
+            <p> 
+                Welcome to H-Motors! Established with a passion for innovation and quality, H-Motors has become a trusted name in the automotive industry, dedicated to delivering top-quality vehicles that enhance the driving experience. Our mission is to empower our customers by providing reliable, high-performance cars that fit diverse needs and lifestyles.
+            </p>
+            <p>Thank you for choosing H-Motors. We look forward to being part of your journey on the road ahead!</p>
+            <br><br>
+            <a href="#" class="btn-small waves-effect waves-light orange">Learn More</a>
+        </div>
+    </div>
+    
+    <!-- Our Gallery Section -->
+<div class="our-gallery-section">
+    <h2 class="center-align">Our Gallery</h2>
+    
+    <!-- Gallery Grid -->
+    <div class="gallery-grid">
+        <img src="img/Avanza.png" alt="Car 1" onclick="openLightbox(this)">
+        <img src="img/Hilux.png" alt="Car 2" onclick="openLightbox(this)">
+        <img src="img/Veloz.png" alt="Car 3" onclick="openLightbox(this)">
+        <img src="img/Vios.png" alt="Car 4" onclick="openLightbox(this)">
+        <img src="img/yaris.png" alt="Car 5" onclick="openLightbox(this)">
+    </div>
+</div>
+    <!-- Lightbox Modal -->
+<div id="lightboxModal" class="lightbox-modal">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-content" id="lightboxImage">
+</div>
+
+    <hr>
+
+    <br><br>
+
+
+        <h2 class="white-text #1a237e indigo darken-4
+        center-align">Top Rated Cars</h2>
+        <div class="filter-buttons center-align">
+            <button class="filter-btn">All</button>
+            <button class="filter-btn">Top Rated</button>
+            <button class="filter-btn">Top Picks</button>
+            <button class="filter-btn">Top Performers</button>
+            <button class="filter-btn">Editor's Picks</button>
+        </div>
+    
+        <div class="car-cards">
+            <div class="car-card">
+                <img src="img/Avanza.png" alt="Car 1" class="car-image">
+                <h3>Avanza</h3>
+                <p>Top Rated</p>
+                <button class="btn view-details">View Details</button>
+                <button class="btn test-drive">Test Drive</button>
+            </div>
+            <div class="car-card">
+                <img src="img/Hilux.png" alt="Car 2" class="car-image">
+                <h3>Hilux</h3>
+                <p>Top Rated</p>
+                <button class="btn view-details">View Details</button>
+                <button class="btn test-drive">Test Drive</button>
+            </div>
+            <div class="car-card">
+                <img src="img/Veloz.png" alt="Car 3" class="car-image">
+                <h3>Veloz</h3>
+                <p>Editor's Pick</p>
+                <button class="btn view-details">View Details</button>
+                <button class="btn test-drive">Test Drive</button>
+            </div>
+            <div class="car-card">
+                <img src="img/Vios.png" alt="Car 4" class="car-image">
+                <h3>Vios</h3>
+                <p>Top Rated</p>
+                <button class="btn view-details">View Details</button>
+                <button class="btn test-drive">Test Drive</button>
+            </div>
+            <div class="car-card">
+                <img src="img/yaris.png" alt="Car 5" class="car-image">
+                <h3>Yaris Cross HEV</h3>
+                <p>Top Rated</p>
+                <button class="btn view-details">View Details</button>
+                <button class="btn test-drive">Test Drive</button>
+            </div>
+        </div>
+
+        <!-- Our Services Section -->
+        <div class="our-services-section">
+            <h2 class="center-align">Our Services</h2>
+        <div class="services-grid">
+        <div class="service-card">
+            <i class="fas fa-wrench"></i>
+            <h4>Routine Maintenance</h4>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-car-crash"></i>
+            <h4>Brake Services</h4>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-tools"></i>
+            <h4>Maintenance Package</h4>
+        </div>
+        <div class="service-card">
+            <i class="fa-regular fa-circle-dot"></i>
+            <h4>Tire Services</h4>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-battery-three-quarters"></i>
+            <h4>Battery Services</h4>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-oil-can"></i>
+            <h4>Fluid Maintenance</h4>
+        </div>
+        </div>
+    </div>
+
+    <section class="car-testimonial-section">
+        <h2 class="section-title">What Our Customers Say About Our Cars</h2>
+
+        <div class="car-testimonial">
+            <div class="car-testimonial-content">
+                <p class="car-testimonial-quote">"The performance of this car is out of this world! Best purchase I've ever made."</p>
+                <p class="car-testimonial-name">Mark C.</p>
+                <p class="car-testimonial-car">2024 Toyota Yaris Cross HEV</p>
+            </div>
+            <div class="car-testimonial-image">
+                <img src="img/profile.png" alt="Yaris Cross HEV">
+            </div>
+        </div>
+
+        <div class="car-testimonial">
+            <div class="car-testimonial-content">
+                <p class="car-testimonial-quote">"Smooth drive, incredible interior, and luxury all the way. Highly recommend!"</p>
+                <p class="car-testimonial-name">Sophia R.</p>
+                <p class="car-testimonial-car">2024 Toyota Avanza</p>
+            </div>
+            <div class="car-testimonial-image">
+                <img src="img/profile-girl.png" alt="Avanza">
+            </div>
+        </div>
+
+        <div class="car-testimonial">
+            <div class="car-testimonial-content">
+                <p class="car-testimonial-quote">"Perfect family car. Spacious, comfortable, and great fuel economy."</p>
+                <p class="car-testimonial-name">Amir A.</p>
+                <p class="car-testimonial-car">2024 Toyota Veloz</p>
+            </div>
+            <div class="car-testimonial-image">
+                <img src="img/profile.png" alt="Veloz">
+            </div>
+        </div>
+
+        <div class="car-testimonial">
+            <div class="car-testimonial-content">
+                <p class="car-testimonial-quote">"I’ve never had such an exhilarating driving experience. A true masterpiece!"</p>
+                <p class="car-testimonial-name">Junken S.</p>
+                <p class="car-testimonial-car">2024 Toyota Hilux</p>
+            </div>
+            <div class="car-testimonial-image">
+                <img src="img/profile.png" alt="Hilux">
+            </div>
+        </div>
+
+        <div class="car-testimonial">
+            <div class="car-testimonial-content">
+                <p class="car-testimonial-quote">"Great value for money. Reliable, sleek, and modern design. Love it!"</p>
+                <p class="car-testimonial-name">David K.</p>
+                <p class="car-testimonial-car">2024 Toyota Vios</p>
+            </div>
+            <div class="car-testimonial-image">
+                <img src="img/profile.png" alt="Vios">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Contact Us Section -->
+<div class="contact-us-section">
+    <h2 class="center-align">Contact Us</h2>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+        <form action="#" method="post">
+            <div class="input-field">
+                <input type="text" id="name" name="name" required>
+                <label for="name"> Name</label>
+            </div>
+            <div class="input-field">
+                <input type="email" id="email" name="email" required>
+                <label for="email"> Email</label>
+            </div>
+            <div class="input-field">
+                <textarea id="message" name="message" class="materialize-textarea" required></textarea>
+                <label for="message"> Message</label>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+
+    <!-- Contact Information and Social Media Links -->
+    <div class="contact-info">
+        <ul>
+            <li><i class="fab fa-facebook"></i> <a href="https://facebook.com/Heromotorsphilippines" target="_blank">Facebook</a></li>
+            <li><i class="fab fa-twitter"></i> <a href="https://twitter.com/Heromotorsphilippines" target="_blank">Twitter</a></li>
+            <li><i class="fab fa-instagram"></i> <a href="https://instagram.com/Heromotorsphilippines" target="_blank">Instagram</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:Heromotorsphilippines.com">Heromotorsphilippines.com</a></li>
+            <li><i class="fas fa-phone"></i> <a href="tel:+63 9995633">+63 9995633</a></li>
+        </ul>
+        </div>
+    </div>
+
+    </div>
+    
+    <!-- JQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <script>
+            // Function to open lightbox
+            function openLightbox(image) {
+                const lightboxModal = document.getElementById("lightboxModal");
+                const lightboxImage = document.getElementById("lightboxImage");
+        
+                lightboxImage.src = image.src;
+                lightboxModal.style.display = "flex";
+            }
+        
+            // Function to close lightbox
+            function closeLightbox() {
+                const lightboxModal = document.getElementById("lightboxModal");
+                lightboxModal.style.display = "none";
+            }
+        </script>
+
+</body>
+</html>
